@@ -32,7 +32,8 @@ async function scrape() {
             ////can get name without split 
             //after name we want more things like the image 
 
-            const name = { name: listItem.textContent.split("(")[0] };
+            //made the edit here
+            const name = listItem.textContent;
 
             const linkAddress = listItem.querySelector("a").href
 
