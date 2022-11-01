@@ -9,7 +9,7 @@ async function getBoxerImages(){
     for (boxer of boxers){
         console.log("Boxer:",boxer.name)
         //console.log(boxers); 
-        const page = await axios.get(`https://en.wikipedia.org/${boxer.wikipediaUrl}`)
+        const page = await axios.get(`https://en.wikipedia.org${boxer.wikipediaUrl}`)
         
         const html = page.data
         //console.log(html); 
