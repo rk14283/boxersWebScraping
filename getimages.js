@@ -13,6 +13,7 @@ async function getBoxerImages(){
         
         const html = page.data
         //console.log(html); 
+        
         //javascript object with HTML
         const jsdom = new JSDOM(html);
         const infoBox = jsdom.window.document.querySelector(".infobox-image");
