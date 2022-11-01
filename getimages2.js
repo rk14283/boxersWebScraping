@@ -50,7 +50,7 @@ async function getBoxerImages(){
         }
         //console.log(tableRows.length);
         console.log(boxer);
-fs.writeFileSync("boxersWithImages2.json", JSON.stringify(boxers)); 
+fs.writeFileSync("boxersAllData.json", JSON.stringify(boxers)); 
 
 }
 
